@@ -12,7 +12,8 @@ fill(205,40,4)
   quad(365, 705, 613, 705, 613, 470, 365, 470)
 
   strokeWeight(10);
-  line(365, 0, 365, height);
+  line(365 + random(-12, 12), 0,
+       365 + random(-12, 12), height);
 
   line(0, 278, width, 278);
   line(0, 470, width, 470);
@@ -23,6 +24,8 @@ fill(205,40,4)
   line(365, 705, 613, 705);
 
 }
+
+
 
 
 function windowResized() {
